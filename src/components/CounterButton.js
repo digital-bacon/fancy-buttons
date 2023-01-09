@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 function CounterButton() {
   const [clickAmount, setClickAmount] = useState(0);
   const handleClick = () => setClickAmount(clickAmount + 1);
