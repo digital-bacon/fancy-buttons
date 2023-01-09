@@ -1,6 +1,6 @@
 import { useState } from "react";
 function TextRepeaterButton() {
-  const [repetitions, setRepetitions] = useState(2);
+  const [repetitions, setRepetitions] = useState(1);
   const textArray = [];
     for (let i = 0; i < repetitions; i++) {
       textArray.push(<span key={i}>I like this text</span>);
@@ -13,7 +13,7 @@ function TextRepeaterButton() {
   return (
     <button onClick={handleClick} className="TextRepeaterButton">
       {textArray}
-  </button>
+    </button>
   );
 }
 
