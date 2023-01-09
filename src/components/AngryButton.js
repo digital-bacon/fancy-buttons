@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function AngryButton() {
+  const [anger, setAnger] = useState();
+
   return (
     <button className="AngryButton">
       {/* When the threshold is not reached */}
@@ -9,3 +13,4 @@ function AngryButton() {
   );
 }
 
+export default AngryButton;
